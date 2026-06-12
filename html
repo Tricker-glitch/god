@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Lock Fan Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#000428,#004e92);
+    color:white;
+    overflow-x:hidden;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:6rem;
+    text-transform:uppercase;
+    color:#00e5ff;
+    text-shadow:0 0 20px #00e5ff;
+    animation:glow 2s infinite alternate;
+}
+
+.hero p{
+    font-size:1.5rem;
+    margin-top:20px;
+}
+
+.btn{
+    margin-top:30px;
+    padding:15px 40px;
+    border:none;
+    background:#00e5ff;
+    color:black;
+    font-size:1.2rem;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:30px;
+    transition:0.4s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 30px #00e5ff;
+}
+
+.players{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:60px;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    transition:0.5s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #00e5ff;
+}
+
+.card img{
+    width:100%;
+    border-radius:15px;
+}
+
+.card h2{
+    margin-top:15px;
+    color:#00e5ff;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px #00e5ff;
+    }
+    to{
+        text-shadow:0 0 40px #00e5ff,
+                     0 0 80px #00e5ff;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <h1>BLUE LOCK</h1>
+    <p>Only The Strongest Striker Survives</p>
+    <button class="btn">Enter Project</button>
+</section>
+
+<section class="players">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x400" alt="">
+        <h2>Yoichi Isagi</h2>
+        <p>Master of Spatial Awareness</p>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x400" alt="">
+        <h2>Rin Itoshi</h2>
+        <p>Cold-Blooded Genius</p>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x400" alt="">
+        <h2>Seishiro Nagi</h2>
+        <p>Natural Football Prodigy</p>
+    </div>
+
+</section>
+
+</body>
+</html>
